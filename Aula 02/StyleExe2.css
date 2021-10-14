@@ -1,0 +1,12 @@
+.conteudo{
+    background-color: aqua;
+}
+.conteudo small{
+    background-color: blueviolet;
+}
+.conteudo h4{
+    font-size: 60px;
+}
+.conteudo2 h4{
+    font-size: 90px;
+}
