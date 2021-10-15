@@ -1,0 +1,15 @@
+.teste p:nth-child(2){
+    background-color: red;
+}
+.teste p:last-child{
+    background-color: royalblue;
+}
+.testep:first-child{
+    background-color: seagreen;
+}
+nav ul li :first-child{
+    background-color: sienna;
+}
+nav ul li {
+    display:inline;
+}

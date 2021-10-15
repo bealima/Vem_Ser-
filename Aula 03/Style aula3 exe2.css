@@ -1,0 +1,29 @@
+.btn{
+    background-color: white;
+    color:red;
+    width: 200px;
+}
+.btn:hover{
+    background-color: red;
+    color: white;
+}
+.btn:active{
+    font-weight: bold;
+}
+/* Quando o botão já foi clicado antes */
+.btn:visited{
+
+}
+nav ul li a:hover{
+    color: tomato;
+}
+nav ul li {
+    display: inline;
+}
+
+nav ul li a ::before{
+    content:"->";
+}
+nav ul li a ::after{
+    content:"ufhudhfduh";
+}

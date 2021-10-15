@@ -1,0 +1,80 @@
+body,html,*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    max-width: 1200px;
+    margin: auto;
+    background-color:#1A75C1 ;
+    display:flex;
+    justify-content: center;
+    padding-left: 600px;
+    padding-right: 600px;
+}
+/* -----BODY------------------------------- */
+.container{
+    display: flex;
+}
+/* ----main----------------- */
+h1{
+    text-align: center;
+    color: #004E8F;
+    font-size: 50;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+main img{
+    width: 250px ;
+}
+main{
+    width: 1300px;
+    background-color:#E5E5E5;
+}
+.noticia{
+    display: flex;
+    width: 600px;
+}
+.card{
+    padding: 0px;
+    padding-left: 70px;
+    padding-right: 140px;
+    padding-bottom: 40px;
+}
+.data-not{
+    color: #1A75C1;
+    padding-left: 60px;
+}
+a{
+    text-decoration: none;
+}
+.carregar{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #847E7E;
+    padding-top: 40px;
+}
+
+/* ---aside--------------------- */
+aside{
+    display:block;
+    float:right;
+    background-color:white;
+    color: #004E8F;
+    padding-left: 30px;
+}
+.Prox-Niver{
+    display: flex;
+    justify-content: center;  
+}
+/* -----------FOOTER------------------------------ */
+footer ul li{
+    display:inline;
+    margin-right: 200px;
+    margin-left: 50px;
+}
+footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
