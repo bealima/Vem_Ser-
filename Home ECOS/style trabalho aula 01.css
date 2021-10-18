@@ -1,0 +1,128 @@
+html, body, *{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    background-color: #1A75C1;
+}
+.pesquisar {
+    border-radius: 12px ;
+    width: 286px;
+    height: 23px;
+}
+.data{
+    border-radius: 12px;
+    width: 136px;
+    height: 23px;
+}
+.container{
+    display: flex;
+    width: 100%;
+    margin:0 auto;
+    background-color: #E5E5E5;
+}
+main{
+    width: 65%;
+}
+.noticias {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 12px 48px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 32;
+    font-weight: bold;
+    color: #1A75C1;
+}
+.data-noticia {
+    margin-bottom: 12px;
+    color: #1A75C1;
+}
+.news-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+.news-block img{
+    /* width: 200px; */
+}
+.news{
+    display: flex;;
+    flex-direction: column;
+    width: 30%;
+}
+.news h3 {
+    font-size: 12;
+    text-align: center;
+    padding: 6px 24px;
+    background-color: #fff;
+    /* height: 25px; */
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    padding: 20px;
+    width: 35%;
+    color: #1A75C1;
+}
+.submit{
+    background-color: #1A75C1;
+    color: white;
+    border-radius: 12px;
+}
+.birthday-block{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: flex-end;
+    width: fit-content;
+}
+.mensagem{
+    width: 254px;
+    border-radius: 12px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.prox-niver{
+    text-decoration: none;
+    background-color: #1A75C1;
+    color: white;
+    height: 12px;
+
+}
+.aside-bottom{
+    justify-content: ;
+}
+footer{
+    padding: 20px;
+}
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+footer li{
+    display: inline;
+    justify-content: space-between;
+}
+.carregar {
+    text-decoration: none;
+    text-align: center;
+    font-size: medium;
+    margin-top: 16px;
+    margin-bottom: 64px;
+    color: #847E7E;
+}

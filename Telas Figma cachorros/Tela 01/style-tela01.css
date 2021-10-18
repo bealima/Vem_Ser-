@@ -1,0 +1,77 @@
+html,body,*{
+    margin: 0;
+    padding: 0;
+}
+/* ---- CABEÇALHO ---- */
+header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 20px;
+    align-items: center;
+    margin-bottom: 20px;    
+}
+a{
+    text-decoration: none;
+    list-style: none;
+    color:white
+}
+nav, ul, li{
+    display: inline;
+    margin-left: 15px;
+}
+/* --------MAIN------------ */
+h1{
+    text-align: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.up{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 40px;
+}
+.up img{
+    width: 400px;
+    margin: 5px;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200;
+    margin: 0 auto;
+}
+.propaganda{
+    margin-top: 20px;
+}
+.propaganda img{
+    height: 200px;
+    width: 400px;    
+}
+.bermudas{
+    display: flex;
+    width: 1500px;
+    justify-content: space-between;
+    margin: 20px;
+}
+.bermudas img{
+    width: 300px;
+}
+.bermuda-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 580px;
+}
+.bermuda-block{
+    display: flex;
+    align-items: center;
+ } 

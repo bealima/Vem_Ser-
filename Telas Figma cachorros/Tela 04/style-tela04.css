@@ -1,0 +1,52 @@
+html,body,*{
+    margin: 0;
+    padding: 0;
+}
+/* ---- CABEÇALHO ---- */
+header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 20px;
+    align-items: center;
+    margin-bottom: 20px;    
+}
+a{
+    text-decoration: none;
+    list-style: none;
+    color:white
+}
+nav, ul, li{
+    display: inline;
+    margin-left: 15px;
+}
+/* ------MAIN---------- */
+h1{
+    text-align: center;
+    margin: 20px;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.left{
+    margin-right: 20px;
+}
+.card-imagem {
+    position: relative;
+    color:black;
+}
+.legenda{
+    position: absolute;
+    bottom: 8px;
+    text-align: center;
+    left: 40%;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+}
+.bottom{
+
+}
