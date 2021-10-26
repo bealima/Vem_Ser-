@@ -19,8 +19,9 @@ alert(`Olá ${nome_cliente}, eu me chamo ${nome_atendente}, em que posso ajudar?
 var isFriday= confirm("Hoje é sexta-feira? SIM (Ok)  NÃO (Cancelar)")
 var isTwoGreaterThanFour =  2 > 4
 var isValueEmpty = prompt("Digite alguma coisa")
-if ((isValueEmpty  !== null) && (isValueEmpty !== undefined) && (isValueEmpty.length !== 0)){
-} else (alert("Digite um valor válido"));
+if ((isValueEmpty  === null) || (isValueEmpty === undefined) || (isValueEmpty.length === 0)){
+  alert("Digite um valor válido"))
+}
 
 //exercício 04:
 var numero_1 = prompt("Digite o primeiro número da operação")
@@ -34,21 +35,21 @@ numero_2 = parseFloat(numero_2)
 if ((typeof numero_1 === 'number') && (numero_1.toString() !== 'NaN')
   && 
   (typeof numero_2 === 'number') && (numero_2.toString() !== 'NaN') && (numero_2 !== 0)){
-  
+    if (operacao === "+"){
+      resultado = numero_1 + numero_2 
+    } else if( operacao === "-" ){
+      resultado = numero_1 - numero_2
+    } else if (operacao === "*"){
+      resultado = numero_1 * numero_2
+    } else if (operacao === "/"){
+      resultado = numero_1 / numero_2
+    }
+   if ((operacao !== "+") && (operacao !== "-") && (operacao !== "*") && (operacao!== "/") ){
+      alert("Opa, digite uma operação válida." );
 } else {
     alert("Opa, digite um valor válido.");
 }
-if (operacao === "+"){
-   resultado = numero_1 + numero_2 
- } else if( operacao === "-" ){
-   resultado = numero_1 - numero_2
- } else if (operacao === "*"){
-   resultado = numero_1 * numero_2
- } else if (operacao === "/"){
-   resultado = numero_1 / numero_2
- }
-if ((operacao !== "+") && (operacao !== "-") && (operacao !== "*") && (operacao!== "/") ){
-   alert("Opa, digite uma operação válida." );
+
  } else {
    alert( `O resultado dessa operação é igua a ${resultado}`);
  }
@@ -71,8 +72,8 @@ if ((typeof T1 === 'number') && (T1.toString() !== 'NaN')
 }
 if (media < 5){
   alert ("Reprovado")
-} else if ((media > 5) && (media < 7)){
+} else if ((media >= 5) && (media < 7)){
   alert("Recuperação")
-} else if (media > 7 ){
+} else if (media >= 7 ){
   alert("Parabéns, você foi aprovado(a)")
 }
