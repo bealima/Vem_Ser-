@@ -57,8 +57,8 @@ var n5 = parseFloat(prompt("Digite o quinto número: "))
 var numeros = [n1,n2,n3,n4,n5]
 var i = 0
 var soma = 0 
-while  (i < numeros.length) {
+do
     soma = soma + numeros[i] 
     i ++
-}
+while  (i < numeros.length);
 console.log(soma)

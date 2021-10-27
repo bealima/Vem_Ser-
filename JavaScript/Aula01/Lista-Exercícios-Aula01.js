@@ -32,9 +32,11 @@ var resultado = 0
 numero_1 = parseFloat(numero_1)
 numero_2 = parseFloat(numero_2)
 
-if ((typeof numero_1 === 'number') && (numero_1.toString() !== 'NaN')
+if ((typeof numero_1 !== 'number') || (numero_1.toString() === 'NaN')
   && 
-  (typeof numero_2 === 'number') && (numero_2.toString() !== 'NaN') && (numero_2 !== 0)){
+  (typeof numero_2 !== 'number') || (numero_2.toString() === 'NaN')){
+     alert("Opa, digite um valor válido.");
+  }else {
     if (operacao === "+"){
       resultado = numero_1 + numero_2 
     } else if( operacao === "-" ){
@@ -42,17 +44,16 @@ if ((typeof numero_1 === 'number') && (numero_1.toString() !== 'NaN')
     } else if (operacao === "*"){
       resultado = numero_1 * numero_2
     } else if (operacao === "/"){
-      resultado = numero_1 / numero_2
-    }
-   if ((operacao !== "+") && (operacao !== "-") && (operacao !== "*") && (operacao!== "/") ){
+      if (numero_2 === 0){
+        alert ("Não é possível dividir por 0, tente outro número")
+      }else {
+        resultado = numero_1 / numero_2
+      }
+    }else if ((operacao !== "+") && (operacao !== "-") && (operacao !== "*") && (operacao!== "/") ){
       alert("Opa, digite uma operação válida." );
-} else {
-    alert("Opa, digite um valor válido.");
-}
-
- } else {
-   alert( `O resultado dessa operação é igua a ${resultado}`);
- }
+    }else {
+      alert( `O resultado dessa operação é igua a ${resultado}`);
+    }
 
 // exercício 05:
 var T1 = parseFloat(prompt("Nota do Trabalho 1 :"))
