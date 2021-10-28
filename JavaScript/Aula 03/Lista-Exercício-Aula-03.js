@@ -18,7 +18,7 @@
 var desordem = [8, 5, 2, 9, 0, 4]
 
 function ordenadora(desordem){
-    
+
 }
 
 
@@ -42,7 +42,7 @@ function growList(lista) {
   x = prompt("Quantos itens você quer adicionar na lista?")
   for (let i = 1; i <= x; i++ ){
     n = prompt(`Digite o ${i}° da lista:`);
-    return lista.push(n);
+    lista.push(n);
   }
   console.log(lista);
 }
