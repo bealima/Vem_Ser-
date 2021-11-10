@@ -1,0 +1,29 @@
+.content{
+  background-color: #D5D5D5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    
+}
+
+.titulo{
+  color: #6D7993;
+}
+
+.imgCogumelo{
+  width: 120px;
+  border-radius: 20PX;
+}
+
+.cogumelos{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50PX;
+  margin-bottom: 50px;
+
+}
+
+.textStyle{
+  text-align: justify;
+  margin: 0px 100px 0px 100px;
+}
