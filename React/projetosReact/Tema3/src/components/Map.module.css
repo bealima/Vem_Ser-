@@ -1,0 +1,17 @@
+.mapa{
+  padding: 20px;
+  background-color: #D5D5D5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+      
+}
+
+.mapa div {
+  display: flex;
+  justify-content: center;
+}
+
+.mapa h4 {
+  text-align: center;
+}

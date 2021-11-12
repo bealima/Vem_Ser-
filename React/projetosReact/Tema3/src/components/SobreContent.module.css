@@ -1,0 +1,24 @@
+.sobreContent{
+  background-color: #D5D5D5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sobreContent h1 {
+  text-align: center;
+  color: #6D7993;
+}
+
+.sobreContent div {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.sobreContent p{
+  text-align: justify;
+  margin: 0px 100px 0px 100px;
+  padding-bottom: 20px;
+}

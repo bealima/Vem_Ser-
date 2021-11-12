@@ -1,0 +1,22 @@
+.navBar {
+  background-color: #96858f;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+}
+
+.h3NavBar{
+  text-align: center;
+}
+
+.imgCogumelo{
+  width: 60px;
+  border-radius: 100px;
+  margin-left: 20px;
+  margin-right: 110px;
+}
+
+
+

@@ -1,0 +1,11 @@
+.foooter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9099A2;
+  height: 65px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+    
+}
+

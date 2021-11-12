@@ -1,0 +1,16 @@
+  .menu{
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
+    font-size: 12px ;
+    list-style: none;
+  }
+  
+  
+
+  .menu a {
+    text-decoration: none;
+    color: White;
+  }
+
+  
