@@ -1,0 +1,75 @@
+body, html, *{
+  padding: 0px;
+  margin: 0px;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.card a{
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  border-radius: 3px;
+  box-shadow: 1px 2px 2px gainsboro;
+  width: 100%;
+  
+}
+
+.card a:hover{
+  border-radius: 3px;
+  box-shadow: 3px 6px 6px gainsboro;
+  cursor: pointer;
+  
+}
+
+.card ul {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  align-self: center;
+  
+}
+.card img {
+  width: 200px;
+  min-width: 200px;
+  border-radius: 3px;
+}
+
+.card li {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+
+}
+
+.card span {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  margin-left: 20px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  
+}
+
+.card h3{
+  font-size: 16px;
+}
+
+.autor {
+  font-size: 12px;
+}
+
+.abstract {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+
+
