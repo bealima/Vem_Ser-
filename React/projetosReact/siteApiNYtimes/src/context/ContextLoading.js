@@ -10,4 +10,5 @@ function LoadingProvider ({children}){
     </ContextLoading.Provider>
   )
 }
+
 export {LoadingProvider, ContextLoading}
