@@ -1,0 +1,13 @@
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.header ul{
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}
