@@ -31,30 +31,14 @@ function App() {
     (async () => {
 
       const{data} = await axios.get('https://api.github.com/users/bealima')
-      setUsuario(data.results)  
+      setUsuario([data])  
       
     })();
   }, []);
 
-  // useEffect(() => {
-
-  //   async function getUsuario() {
-  //     try {
-  //       const response = await axios.get('https://api.github.com/users/bealima');
-  //       console.log(response);
-  //       console.log(response.data);
-  //       setUsuario(response.data);
-  //     } catch (error) {
-  //       console.error(error);
-  //     }
-  //   }
-  //   getUsuario()
-  //   console.log(usuario)
-  // },[])
-  
   return (
     <div className="App">
-      <h1>GitHub BeaLima</h1>
+      
       <List usuario={usuario} />
     </div>
   );
