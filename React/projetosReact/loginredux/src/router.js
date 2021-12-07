@@ -11,12 +11,27 @@ import Login from './pages/Login';
 import Pessoa from './pages/Pessoa';
 import Endereco from './pages/Endereco';
 import NotFound  from './pages/NotFound';
+import Loading from "./components/loading/Loading";
+import { setAuth } from "./store/actions/AuthActions";
+import { useEffect } from "react";
 
-function Routers({auth}) {
+function Routers({auth,dispatch}) {
 
-  // if (auth.loading){
-  //   return <h1>Loading..</h1>
-  // }
+  const localToken = localStorage.getItem('token')
+  
+  useEffect (()=>{
+    if (localToken){
+      console.log('token')
+      setAuth(dispatch)
+    }
+    console.log(auth.auth)
+  
+    if (auth.loading){
+      return <Loading/>
+    }
+  },[])
+  
+
 
   return (
     <BrowserRouter>

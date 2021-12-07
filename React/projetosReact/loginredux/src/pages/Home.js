@@ -1,11 +1,11 @@
 import React from 'react'
 import { useEffect } from 'react'
 import { connect } from "react-redux";
-import { handleLoading } from '../store/actions/AuthActions';
+// import { handleLoading } from '../store/actions/AuthActions';
 
 function Home({auth, dispatch}) {
   useEffect(()=>{
-    handleLoading(false, dispatch)
+    // handleLoading(false, dispatch)
   },[])
 
   return (

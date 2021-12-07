@@ -1,4 +1,5 @@
 import api from "../../api";
+import { setAuth } from "./AuthActions";
 
 
 // GET
@@ -14,7 +15,6 @@ export const getListPessoas = async (dispatch) =>{
       type: 'GET_LIST',
       listPessoas: data
     })
-    // console.log(dispatch.listPessoas)
   } else {
       console.log('get não autorizado')
   }

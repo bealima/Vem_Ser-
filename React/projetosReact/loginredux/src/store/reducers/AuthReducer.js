@@ -32,15 +32,35 @@ const authReducer = (state= INITIAL_STATE, action) => {
       }
     }
   }
-  if (action.type === 'SET_LOADING'){
+  if (action.type === 'SHOW_LOADER'){
     return{
       ...state,
       auth:{
         ...state.auth,
-        loading: action.loading
+        loading: true
       }
     }
   }
+  if (action.type === 'HIDE_LOADER'){
+    return{
+      ...state,
+      auth:{
+        ...state.auth,
+        loading: false
+      }
+    }
+  }
+  if (action.type === 'SET_AUTH'){
+    return{
+      ...state,
+      auth:{
+        ...state.auth,
+        auth: true
+      }
+    }
+  }
+
+
   return state
 }
 

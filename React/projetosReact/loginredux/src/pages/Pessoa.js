@@ -4,20 +4,21 @@ import { connect } from "react-redux";
 import { createPessoa, deletePessoa, getListPessoas, formEdicao, editarPessoa} from '../store/actions/PessoasActions';
 import styles from './Pessoa.module.css'
 import moment from "moment";
-import { handleLoading } from "../store/actions/AuthActions";
+import {showLoader, hideLoader, setAuth } from "../store/actions/AuthActions";
 
 
 const Pessoa =({listPessoas,initialValues,isEdicao, loading, auth, dispatch}) =>{
   
   
   useEffect( () => {
-    // console.log('qualquer coisa')
-    // handleLoading(true, dispatch)
+
+    // console.log('oi')
+    // showLoader(dispatch)
     
-    getListPessoas(dispatch)
-    
-      //  handleLoading(false, dispatch)
-    
+    getListPessoas(dispatch)/*.then(res =>{
+      console.log('tchau')
+      hideLoader(dispatch)
+    })*/    
     
   }, []);
 
